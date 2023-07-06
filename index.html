@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dual Dice</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-10"></div>
+                <h1 class="display-1 mt-5">DUAL DICE</h1>
+            </div>
+        </div>
+    </header>
+
+    <main class="col-sm-12 box text-center">
+        <h4 id="new"><i class="fas fa-plus-circle icon"></i>NEW GAME</h4>
+        <div class="row innerRow">
+            <div class="player-0 col-sm-5 active">
+                <h2 id="pl-0">PLAYER 1 <i class="fas fa-circle"></i></h2>
+                <h1 class="score-0 display-4">0</h1>
+                <div class="current-box">
+                    <h4>SCORE</h4>
+                    <h3 class="current-0 text-center">0</h3>
+                </div>
+            </div>
+        
+
+            <div class="dice-box col-sm-2">
+                <img src="./assets/dice-6.png" id="dice-img" class="rounded mx-auto d-block shake animated">
+                <h4 id="rotate"><i class=""fas fa-sync-alt r-icon></i>ROLL DICE</h4>
+                <h4 id="hold"><i class="fas fa-chevron-down h-icon"></i>HOLD</h4>
+            </div>
+
+            <div class="player-1 col-sm-5">
+                <h2 id="pl-1">PLAYER 2 <i class="fas fa-circle"></i></h2>
+                <h1 class="score-1 display-4">0</h1>
+                <div class="current-box">
+                    <h4>SCORE</h4>
+                    <h3 class="current-1 text-center">0</h3>
+                </div>
+            </div>
+        </div> 
+    </main>
+
+    <div class="col-sm-1"></div>
+
+    <div class="text-center">
+        <button role="button" data-bs-toggle="modal" data-bs-target="#rules">
+            Rules
+        </button>
+    </div>
+
+    <div class="modal fade" id="rules" tabindex="-1" aria-labelledby="rules" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body color">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h4 class="modal-title" id="rulesLabel">Rules</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>  
+                    </div>
+                    <p>Le jeu comprend 2 joueurs sur un seul et même écran.<br>
+                        Chaque joueur possède un score temporaire (SCORE) et un score global (GLOBAL).<br>
+                        À chaque tour, le joueur a son ROUND initialisé à 0 et peut lancer un dé autant de fois qu'il le souhaite.<br>
+                        Le résultat d’un lancer est ajouté au ROUND.<br>
+                        Lors de son tour, le joueur peut décider à tout moment de:<br>
+                        - Cliquer sur l’option “Récupérer les points”, qui permet d’envoyer les points du SCORE vers le GLOBAL.<br>
+                        Ce sera alors le tour de l’autre joueur. <br>
+                        - Lancer le dé.<br> S’il obtient un 1, son score est perdu et c’est la fin de son tour.<br>
+                        Le premier joueur qui atteint les 100 points sur global gagne le jeu.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col"></div>
+    
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+body {
+    background-color: #fef5f5;
+    font-family: "Lato";
+}
+
+h1 {
+    color: #3a88e4;
+    font-family: "Lato";
+}
+
+h2 {
+    color: #3a88e4 ;
+}
+
+.container, h1, h5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10%;
+}
+
+#new:hover {
+    padding-right: 7px;
+    transition: 0.15s;
+    transition-timing-function: ease-in;
+}
+
+#pl-0 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  .score-0{
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  
+  .score-1{
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .current-box {
+    background-color: #67cede;
+    margin: auto;
+    width: 30%;
+    color: #000607;
+    padding: 7px;
+    border-radius: 30px;
+  }
+
+  #pl-1{
+    margin-left: auto;
+  
+  }
+
+  #rotate{
+    cursor: pointer;
+   
+  }
+  
+  #rotate:hover .r-icon{
+    padding-right: 7px;
+    transition: 0.15s;
+    transition-timing-function: ease-in;
+  }
+
+  #hold {
+    cursor: pointer;
+  }
+  
+  #hold:hover .h-icon{
+  padding-right: 7px;
+   transition: 0.15s;
+   transition-timing-function: ease-in;
+  }
+
+  .player-0 i{
+    display: none;
+  }
+  
+  .player-1 i{
+    display: none;
+  }
+  
+  .active{
+    font-weight: 300;
+    color: #fc0017;
+  }
+  
+  .active i {
+    display: inline;
+    font-size: 20px;
+    color: #fc0017;
+  }
+  
+  button {
+   margin: 10px;
+   padding: 20px;
+   background-color: #67cede;
+   color: #00060;
+   border:none; 
+   border-radius: 30px;
+  
+  }
+  
